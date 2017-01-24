@@ -6,8 +6,8 @@ header('Content-Type: text/html; charset=utf-8');
  * Date: 24/04/16
  * Time: 3:26 PM
  */
-$access_token = "EAAFiLqqrKJcBAOqZAUh0uZCMmzxYTvZCKSlqPtg43hNqQx12IO4cl4j8ZBCs4jDjqRPvA2FVvu5CeCuuF2oMRgMcMLgOrlNSY3VnCl5elezT3k5W4MZCozSP4k7AdZAb33sKqjeDDY4eYcyKoDeR2siMl7nZAoV5HatvZA5umxFXfgZDZD";
-$verify_token = "mjulibrarybot";
+$access_token = "EAAFiLqqrKJcBAJl3qCcn9fZAnujlQEhbXsROiW9xq336ZA8iOSMWhLPh1wZCpW9tZAjgDD25XPq10kWIZATkIWWJ8G0QRpSamjDiSI7ivoYobGdxMlztDRszonhXbkxcnXZBWKZAjj4CI0FUupk5ypHr3xAClcIARf0ngZAfCauGSgZDZD";
+$verify_token = "mju_library_bot";
 $hub_verify_token = null;
 if(isset($_REQUEST['hub_challenge'])) {
     $challenge = $_REQUEST['hub_challenge'];
@@ -32,7 +32,7 @@ $getmessage = explode("#",$message);
 
 //}
 //API Url
-$url = 'https://graph.facebook.com/v2.6/me/messages?access_token='.$access_token;
+$url = 'https://graph.facebook.com/v2.8/me/messages?access_token='.$access_token;
 //Initiate cURL.
 $ch = curl_init($url);
 //The JSON data.
